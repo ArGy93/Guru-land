@@ -1,0 +1,159 @@
+.numbers {
+  position: relative;
+  padding-top: pixelToOtherUnit(117, rem);
+  padding-bottom: 0;
+  text-align: center;
+  .impressions {
+    position: relative;
+    z-index: 10;
+    display: block;
+    margin-top: pixelToOtherUnit(166, rem);
+    margin-left: pixelToOtherUnit(47, rem);
+    background: linear-gradient(45deg,#005cfc 45%, #5cb7d9 50%, #90eac5 53%, #98f2c2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    image-rendering: -webkit-optimize-contrast;
+    span {
+      margin-right: pixelToOtherUnit(30, rem);
+      font-family: 'Montserrat';
+      font-weight: 900;
+      font-size: pixelToOtherUnit(120, rem);
+    }
+  }
+  .impressions-label {
+    position: relative;
+    z-index: 10;
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: pixelToOtherUnit(14, rem);
+    text-transform: uppercase;
+    letter-spacing: pixelToOtherUnit(2.8, rem);
+    margin-left: pixelToOtherUnit(20, rem);
+    margin-top: pixelToOtherUnit(12, rem);
+  }
+  .dau {
+    position: relative;
+    z-index: 10;
+    display: block;
+    margin-top: pixelToOtherUnit(41, rem);
+    margin-left: pixelToOtherUnit(66, rem);
+    background: linear-gradient(45deg,#005cfc 45%, #5cb7d9 49%, #90eac5 51%, #98f2c2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    image-rendering: -webkit-optimize-contrast;
+    span {
+      font-family: 'Montserrat';
+      font-weight: 900;
+      font-size: pixelToOtherUnit(84, rem);
+      &.first {
+        margin-right: pixelToOtherUnit(21, rem);
+      }
+      &.second {
+        margin-right: pixelToOtherUnit(21, rem);
+      }
+      &.third {
+        margin-right: pixelToOtherUnit(51, rem);
+      }
+    }
+  }
+  .dau-label {
+    position: relative;
+    z-index: 10;
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: pixelToOtherUnit(14, rem);
+    text-transform: uppercase;
+    letter-spacing: pixelToOtherUnit(2.8, rem);
+    margin-left: pixelToOtherUnit(20, rem);
+    margin-top: pixelToOtherUnit(7, rem);
+  }
+  .features {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    margin-top: pixelToOtherUnit(47, rem);
+    .feature-box {
+      display: flex;
+      flex-direction: column;
+      &.first {
+        margin-right: pixelToOtherUnit(231, rem);
+      }
+      .number {
+        font-family: 'Montserrat';
+        font-weight: normal;
+        font-size: pixelToOtherUnit(54, rem);
+        color: theme-blue;
+      }
+      .case {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: pixelToOtherUnit(14, rem);
+        text-transform: uppercase;
+        margin-top: pixelToOtherUnit(13, rem);
+      }
+    }
+  }
+  .btn {
+    margin-top: pixelToOtherUnit(91, rem);
+    margin-left: pixelToOtherUnit(18, rem);
+    padding-left: pixelToOtherUnit(70, rem);
+    padding-right: pixelToOtherUnit(70, rem);
+  }
+  .early-access {
+    margin-top: pixelToOtherUnit(153, rem);
+    padding-bottom: pixelToOtherUnit(104, rem);
+    .container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 100;
+      width: pixelToOtherUnit(1600, rem);
+      margin: 0 auto;
+      flex-direction: row;
+      padding-top: 0;
+      .title {
+        margin-left: pixelToOtherUnit(166, rem);
+        padding-top: pixelToOtherUnit(90, rem);
+        h2 {
+          line-height: pixelToOtherUnit(73, rem);
+        }
+        span {
+          font-family: 'Roboto';
+          font-weight: 200;
+          font-size: pixelToOtherUnit(16, rem);
+          letter-spacing: pixelToOtherUnit(0.2, rem);
+          margin-top: pixelToOtherUnit(34, rem);
+          display: block;
+          margin-left: pixelToOtherUnit(-403, rem);
+        }
+      }
+      .btn {
+        margin-top: pixelToOtherUnit(100, rem);
+        margin-left: pixelToOtherUnit(156, rem);
+        padding-top: pixelToOtherUnit(38, rem);
+        padding-bottom: pixelToOtherUnit(38, rem);
+        padding-left: pixelToOtherUnit(83, rem);
+        padding-right: pixelToOtherUnit(83, rem);
+        font-size: pixelToOtherUnit(18, rem);
+        letter-spacing: pixelToOtherUnit(2, rem);
+      }
+    }
+  }
+  .bg-feature {
+    position: absolute;
+    top: pixelToOtherUnit(640, rem);
+    left: pixelToOtherUnit(153, rem);
+    z-index: 1;
+    background: url(../img/numbers_section/bg_feature.png) no-repeat;
+    background-size: cover;
+    height: pixelToOtherUnit(780, vw);
+    width: pixelToOtherUnit(1600, rem);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: pixelToOtherUnit(7, rem);
+    margin-right: pixelToOtherUnit(7, rem);
+  }
+}

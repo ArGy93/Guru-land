@@ -1,0 +1,79 @@
+.platform {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: pixelToOtherUnit(63, rem);
+  .main-subtitle {
+    margin-left: pixelToOtherUnit(16, rem);
+    &:after{
+      background: #000000;
+    }
+    span {
+      margin-left: pixelToOtherUnit(33, rem);
+      margin-right: 0;
+      text-transform: lowercase;
+      font-weight: 1000;
+    }
+  }
+  .bg-feature {
+    width: pixelToOtherUnit(1070, rem);
+    height: pixelToOtherUnit(1077, rem);
+    margin-top: pixelToOtherUnit(109, rem);
+    margin-left: pixelToOtherUnit(426, rem);
+    border-radius: pixelToOtherUnit(528, rem);
+    background-color theme-blue;
+  }
+  .main-image {
+    position: absolute;
+    top: pixelToOtherUnit(420, rem);
+    left: pixelToOtherUnit(175, rem);
+    img {
+      width: 100%;
+    }
+  }
+  .opportunities {
+    display: flex;
+    margin-top: pixelToOtherUnit(25, rem);
+    margin-bottom: pixelToOtherUnit(17, rem);
+    margin-left: pixelToOtherUnit(360, rem);
+    margin-right: pixelToOtherUnit(360, rem);
+    .box {
+      width: pixelToOtherUnit(150, rem);
+      text-align: center;
+      &.first {
+        margin-left: pixelToOtherUnit(45, rem);
+      }
+      &.second {
+        margin-left: pixelToOtherUnit(170, rem);
+      }
+      &.third {
+        margin-left: pixelToOtherUnit(170, rem);
+      }
+      &.fourth {
+        width: pixelToOtherUnit(200, rem);
+        margin-left: pixelToOtherUnit(145, rem);
+      }
+      .number {
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: pixelToOtherUnit(54, rem);
+        letter-spacing: 1px;
+        color: theme-blue;
+      }
+      .case {
+        display: block;
+        margin-top: pixelToOtherUnit(7, rem);
+        line-height: pixelToOtherUnit(42, rem);
+        font-family: 'Montserrat';
+        font-weight: 200;
+        font-size: pixelToOtherUnit(30, rem);
+      }
+    }
+  }
+  .btn {
+    margin-top: pixelToOtherUnit(67, rem);
+    margin-left: pixelToOtherUnit(18, rem);
+    padding-left: pixelToOtherUnit(70, rem);
+    padding-right: pixelToOtherUnit(70, rem);
+  }
+}

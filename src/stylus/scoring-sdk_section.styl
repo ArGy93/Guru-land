@@ -1,0 +1,103 @@
+.scoring-algorithm, .sdk-traffic {
+  padding-bottom: pixelToOtherUnit(35, rem);
+  .container {
+    display: flex;
+    position: relative;
+    width: pixelToOtherUnit(1600, vw);
+    margin: 0 auto;
+    .bg-number {
+      position: absolute;
+      z-index: 1;
+      top: pixelToOtherUnit(113, rem);
+      left: pixelToOtherUnit(80, rem);
+      font-family: 'Montserrat';
+      font-weight: 100;
+      font-size: pixelToOtherUnit(240, rem);
+      color: #ffffff;
+    }
+    .scoring-info {
+      position: relative;
+      z-index: 10;
+      margin-top: pixelToOtherUnit(230, rem);
+      margin-left: pixelToOtherUnit(170, rem);
+      font-size: pixelToOtherUnit(35, rem);
+      letter-spacing: 1px;
+      h2 {
+        margin: 0;
+        font-family: 'Montserrat';
+        font-weight: 200;
+        span {
+          display: block;
+          text-transform: lowercase;
+          font-family: 'Montserrat';
+          font-weight: bold;
+          font-size: pixelToOtherUnit(70, rem);
+          letter-spacing: pixelToOtherUnit(1.5, rem);
+          color: #005cff;
+          transform: translateY(pixelToOtherUnit(-4, rem));
+          &:last-child {
+            transform: translateY(pixelToOtherUnit(-10, rem));
+          }
+        }
+      }
+      p {
+        font-family: 'Roboto';
+        font-weight: 100;
+        font-size: pixelToOtherUnit(18, rem);
+        margin-top: pixelToOtherUnit(23, rem);
+        width: pixelToOtherUnit(430, rem);
+        letter-spacing: pixelToOtherUnit(0.08, rem);
+        font-size: pixelToOtherUnit(18, rem);
+        line-height: pixelToOtherUnit(35, rem);
+      }
+      .btn {
+        margin-top: pixelToOtherUnit(59, rem);
+        padding-top: pixelToOtherUnit(38, rem);
+        padding-bottom: pixelToOtherUnit(38, rem);
+        padding-left: pixelToOtherUnit(58, rem);
+        padding-right: pixelToOtherUnit(58, rem);
+        font-size: pixelToOtherUnit(18, rem);
+        letter-spacing: pixelToOtherUnit(2, rem);
+      }
+    }
+    figure {
+      margin-left: pixelToOtherUnit(209, rem);
+      margin-top: pixelToOtherUnit(82, rem);
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.sdk-traffic {
+  padding-bottom: pixelToOtherUnit(167, rem)
+  .container {
+    .bg-number {
+      top: pixelToOtherUnit(114, rem);
+      left: pixelToOtherUnit(88, rem);
+      color: #eef4fa;
+    }
+    .scoring-info {
+      h2 {
+        margin-top: pixelToOtherUnit(2, rem);
+        span {
+          &:first-child {
+            text-transform: uppercase;
+          }
+          &:last-child {
+            transform: translateY(pixelToOtherUnit(-13, rem));
+          }
+        }
+      }
+      p {
+        width: pixelToOtherUnit(451, rem);
+        letter-spacing: pixelToOtherUnit(0.05, rem);
+      }
+    }
+    figure {
+      margin-left: pixelToOtherUnit(187, rem);
+      margin-top: pixelToOtherUnit(120, rem);
+    }
+  }
+}

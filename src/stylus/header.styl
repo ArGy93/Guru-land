@@ -1,0 +1,99 @@
+.main-header {
+  box-sizing: border-box;
+  padding-top: 4%;
+  .container {
+    display: flex;
+    width: pixelToOtherUnit(1775, rem);
+    margin: 0 auto;
+    .logo {
+      width: pixelToOtherUnit(80, rem);
+      margin-left: pixelToOtherUnit(15, rem);
+      margin-top: pixelToOtherUnit(3, rem);
+      img {
+        width: 100%;
+      }
+    }
+    .header-nav {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 1;
+      font-size: pixelToOtherUnit(18, rem);
+      .main-navigation {
+        margin-top: pixelToOtherUnit(-1, rem);
+        margin-left: pixelToOtherUnit(80, rem);
+        ul {
+          a {
+            display: inline-block;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: pixelToOtherUnit(22, rem);
+            padding-right: pixelToOtherUnit(22, rem);
+            text-decoration: none;
+            color: #6c788c;
+            transition: all 0.4s ease-in;
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child {
+              padding-right: 0;
+            }
+            &:hover {
+              li {
+                font-weight: 500;
+                transform: scale(1.2);
+              }
+            }
+          }
+        }
+      }
+      .account-info {
+        display: flex;
+        justify-content: space-between;
+        width: 23.8%;
+        .login {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          .login-img {
+            width: pixelToOtherUnit(28, rem);
+            margin-right: pixelToOtherUnit(20, rem);
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .btn-start {
+          cursor: pointer;
+          appearance: none;
+          outline: none;
+          white-space: nowrap;
+          padding-top: pixelToOtherUnit(20, rem);
+          padding-bottom: pixelToOtherUnit(20, rem);
+          padding-left: pixelToOtherUnit(44, rem);
+          padding-right: pixelToOtherUnit(44, rem);
+          border: 0.12em solid #76d2a2;
+          border-radius: 8px;
+          background-color: white;
+          transform: translateY(-1px);
+          transition: all 0.4s ease-in;
+          span {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #76d2a2;
+          }
+          &:hover {
+            background-color: #76d2a2;
+            span {
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

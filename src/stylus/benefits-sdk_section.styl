@@ -1,0 +1,114 @@
+.benefits, .sdk-integration {
+  .benefits-features, .integration-features {
+    display: flex;
+    justify-content: center;
+    padding-top: pixelToOtherUnit(149, rem);
+    .feature {
+      display: flex;
+      justify-content: center;
+      width: pixelToOtherUnit(385, rem);
+      margin-left: pixelToOtherUnit(16, rem);
+      figure {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .img-box {
+          align-self: center;
+          &.comission {
+            width: pixelToOtherUnit(128, rem);
+          }
+          &.traffic {
+            width: pixelToOtherUnit(108, rem);
+          }
+          &.scoring {
+            width: pixelToOtherUnit(100, rem);
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .label {
+          font-family: 'Montserrat';
+          font-weight: 300;
+          font-size: pixelToOtherUnit(30, rem);
+          margin-top: pixelToOtherUnit(26, rem);
+          line-height: pixelToOtherUnit(42, rem);
+          &.central {
+            margin-top: pixelToOtherUnit(36, rem);
+          }
+        }
+        span {
+          font-family: 'Roboto';
+          font-weight: 300;
+          font-size: pixelToOtherUnit(18, rem);
+          margin-top: pixelToOtherUnit(27, rem);
+          margin-right: pixelToOtherUnit(75, rem);
+          margin-left: pixelToOtherUnit(75, rem);
+          line-height: pixelToOtherUnit(31, rem);
+        }
+      }
+    }
+  }
+  .btn {
+    margin-left: pixelToOtherUnit(17, rem);
+    margin-top: pixelToOtherUnit(67, rem);
+    padding-top: pixelToOtherUnit(37, rem);
+    padding-bottom: pixelToOtherUnit(37, rem);
+    padding-left: pixelToOtherUnit(70, rem);
+    padding-right: pixelToOtherUnit(70, rem);
+  }
+}
+.sdk-integration {
+  .integration-features {
+    padding-top: pixelToOtherUnit(129, rem);
+    .feature {
+      figure {
+        .img-box {
+          &.unity-plugin {
+            width: pixelToOtherUnit(121, rem);
+            margin-top: pixelToOtherUnit(12, rem);
+            margin-left: pixelToOtherUnit(7, rem);
+            & + .label {
+             margin-top: pixelToOtherUnit(46, rem);
+            }
+          }
+          &.light-sdk {
+            width: pixelToOtherUnit(122, rem);
+            & +.label {
+              margin-top: pixelToOtherUnit(43, rem);
+            }
+          }
+          &.integration {
+            width: pixelToOtherUnit(128, rem);
+          }
+        }
+        .label {
+          font-size: pixelToOtherUnit(36, rem);
+          margin-top: pixelToOtherUnit(37, rem);
+          line-height: pixelToOtherUnit(47, rem);
+          b {
+            font-weight: bold;
+            margin-left: pixelToOtherUnit(-5, rem);
+            margin-right: pixelToOtherUnit(10, rem);
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    position: relative;
+    padding-left: pixelToOtherUnit(60, rem);
+    padding-right: pixelToOtherUnit(60, rem);
+    i {
+      content: url(../img/SDK-integration_section/download.png);
+      position: absolute;
+      top: pixelToOtherUnit(34, rem);
+      left: pixelToOtherUnit(50, rem);
+      height: pixelToOtherUnit(29, rem);
+    }
+    span {
+      display: block;
+      margin-left: pixelToOtherUnit(50, rem);
+    }
+  }
+}

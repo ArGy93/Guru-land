@@ -1,0 +1,159 @@
+.stages {
+  position: relative;
+  padding-bottom: 0;
+  .stages-info {
+    display: flex;
+    margin-top: pixelToOtherUnit(198, rem);
+    margin-left: pixelToOtherUnit(325, rem);
+    margin-right: pixelToOtherUnit(325, rem);
+    .info {
+      position: relative;
+      z-index: 10;
+      letter-spacing: pixelToOtherUnit(4, rem);
+      line-height: pixelToOtherUnit(35, rem);
+      background-color: #f9f8fc;
+      span {
+        display: block;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: pixelToOtherUnit(18, rem);
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .bg-number {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        color: #ffffff;
+        font-family: 'Montserrat';
+        font-weight: 100;
+        font-size: pixelToOtherUnit(175, rem);
+      }
+      &.first {
+        padding-left: pixelToOtherUnit(105, rem);
+        padding-right: pixelToOtherUnit(45, rem);
+        .bg-number {
+          left: pixelToOtherUnit(66, rem);
+        }
+      }
+      &.second {
+        margin-left: pixelToOtherUnit(100, rem);
+        padding-left: pixelToOtherUnit(28, rem);
+        padding-right: pixelToOtherUnit(25, rem);
+        .bg-number {
+          left: pixelToOtherUnit(11, rem);
+        }
+      }
+      &.third {
+        margin-left: pixelToOtherUnit(80, rem);
+        padding-left: pixelToOtherUnit(33, rem);
+        padding-right: pixelToOtherUnit(32, rem);
+        .bg-number {
+          left: pixelToOtherUnit(20, rem);
+        }
+      }
+      &.fourth {
+        margin-left: pixelToOtherUnit(60, rem);
+        padding-left: pixelToOtherUnit(55, rem);
+        padding-right: pixelToOtherUnit(47, rem);
+        transform: translateY(pixelToOtherUnit(2, rem));
+        .bg-number {
+          left: pixelToOtherUnit(66, rem);
+        }
+      }
+    }
+  }
+  .title-center {
+    position: relative;
+    text-align: center;
+    h3 {
+      box-sizing: content-box;
+      position: relative;
+      z-index: 10;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      font-size: pixelToOtherUnit(36, rem);
+      text-transform: uppercase;
+      letter-spacing: pixelToOtherUnit(7, rem);
+      width: pixelToOtherUnit(310, rem);
+      margin-top: pixelToOtherUnit(64, rem);
+      padding-top: pixelToOtherUnit(10, rem);
+      padding-left: pixelToOtherUnit(808, rem);
+      padding-right: pixelToOtherUnit(123, rem);
+      line-height: pixelToOtherUnit(60, rem);
+      background-color: #f9f8fc;
+      span:not(.bg-number) {
+        position: relative;
+        z-index: 10;
+        font-weight: bold;
+        color: #00d3a1;
+      }
+      .bg-number {
+        position: absolute;
+        z-index: -1;
+        top: pixelToOtherUnit(29, rem);
+        color: #ffffff;
+        font-family: 'Montserrat';
+        font-weight: 100;
+        font-size: pixelToOtherUnit(240, rem);
+      }
+    }
+  }
+  .bg-feature {
+    position: absolute;
+    z-index: 1;
+    top: pixelToOtherUnit(520, rem);
+    right: pixelToOtherUnit(221, rem);
+    width: pixelToOtherUnit(1420, rem);
+    height: pixelToOtherUnit(280, rem);
+    border-width: pixelToOtherUnit(5, rem);
+    border-style: solid;
+    border-color: #c0d2f0 #c0d2f0 #c0d2f0 transparent;
+    border-radius: 50%;
+  }
+  .btn {
+    margin-top: pixelToOtherUnit(116, rem);
+    margin-left: pixelToOtherUnit(18, rem);
+    padding-left: pixelToOtherUnit(70, rem);
+    padding-right: pixelToOtherUnit(70, rem);
+  }
+  .early-access {
+    position: relative;
+    margin-top: pixelToOtherUnit(223, rem);
+    padding-bottom: pixelToOtherUnit(63, rem);
+    background: linear-gradient(135deg,#8ba4e3 15%, #bbccf7 60%, #dde6f4 75%, #f3f6ee 100%);
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      z-index: 100;
+      width: pixelToOtherUnit(1600, rem);
+      margin: 0 auto;
+      flex-direction: row;
+      padding-top: 0;
+      .title {
+        margin-left: pixelToOtherUnit(327, rem);
+        padding-top: pixelToOtherUnit(62, rem);
+        h2 {
+          line-height: pixelToOtherUnit(73, rem);
+        }
+      }
+      .btn {
+        margin-top: pixelToOtherUnit(62, rem);
+        margin-left: pixelToOtherUnit(264, rem);
+        padding: 2.3% 5.2%;
+      }
+    }
+  }
+  .bg-field {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: pixelToOtherUnit(960, rem);
+    border-top-right-radius: 70px 385px;
+    border-bottom-right-radius: 70px 385px;
+    background-color: theme-blue;
+  }
+}
